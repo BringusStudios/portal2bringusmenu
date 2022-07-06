@@ -33,7 +33,7 @@
 		"visible"					"1"
 		"enabled"					"1"
 		"tabPosition"				"0"
-		"navUp"						"BtnMapFinale"
+		"navUp"						"BtnShowFPS"
 		"navDown"					"BtnCoOp"
 		"navRight"					"BtnCheats"
 		"labelText"					"#PORTAL2_MainMenu_Solo"
@@ -83,7 +83,7 @@
 		"enabled"			"1"
 		"tabPosition"			"0"
 		"navUp"					"BtnCoOp"
-		"navRight"				"BtnDemoUnderground"
+		"navRight"				"BtnFizzlerTest"
 		"navDown"				"BtnOptions"
 		"labelText"				"#PORTAL2_MainMenu_StatsAndAchievements"
 		"style"					"MainMenuButton"
@@ -178,17 +178,17 @@
 		"tabPosition"				"0"
 		"navUp"						"BtnCheats"
 		"navLeft"					"BtnCoOp"
-		"navDown"					"BtnDemoUnderground"
+		"navDown"					"BtnFizzlerTest"
 		"labelText"					"*MAP DEVTEST*"
 		"style"						"MainMenuButton"
 		"command"					"#map devtest"
 		"ActivationType"			"1"
 	}
 	
-	"BtnDemoUnderground"
+	"BtnFizzlerTest"
 	{
 		"ControlName"				"BaseModHybridButton"
-		"fieldName"					"BtnDemoUnderground"
+		"fieldName"					"BtnFizzlerTest"
 		"xpos"						"380" 
 		"ypos"						"258"
 		"wide"						"280"
@@ -201,9 +201,9 @@
 		"navUp"						"BtnMapDevtest"
 		"navLeft"					"BtnStatsAndAchievements"
 		"navDown"					"BtnOutroMap"
-		"labelText"					"*MAP DEMO_UNDERGROUND*"
+		"labelText"					"*MAP FIZZLER_TEST*"
 		"style"						"MainMenuButton"
-		"command"					"#map demo_underground"
+		"command"					"#map fizzler_test"
 		"ActivationType"			"1"
 	}
 	
@@ -220,7 +220,7 @@
 		"visible"					"1"
 		"enabled"					"1"
 		"tabPosition"				"0"
-		"navUp"						"BtnDemoUnderground"
+		"navUp"						"BtnFizzlerTest"
 		"navLeft"					"BtnOptions"
 		"navDown"					"BtnMap1"
 		"labelText"					"*MAP OUTRO_MAP*"
@@ -310,10 +310,54 @@
 		"tabPosition"				"0"
 		"navUp"						"BtnMap3"
 		"navLeft"					"BtnExtras"
-		"navDown"					"BtnPlaySolo"
+		"navDown"					"BtnShowFPS"
 		"labelText"					"*FINALE WARP (UNLOCK ALL LEVELS)*"
 		"style"						"MainMenuButton"
 		"command"					"#map sp_a4_finale4"
+		"ActivationType"			"1"
+	}
+	
+	"BtnShowFPS"
+	{
+		"ControlName"				"BaseModHybridButton"
+		"fieldName"					"BtnShowFPS"
+		"xpos"						"380"
+		"ypos"						"438"
+		"wide"						"280"
+		"tall"						"20"
+		"autoResize"				"1"
+		"pinCorner"					"0"
+		"visible"					"1"
+		"enabled"					"1"
+		"tabPosition"				"0"
+		"navUp"						"BtnMapFinale"
+		"navLeft"					"BtnExtras"
+		"navDown"					"BtnPlaySolo"
+		"labelText"					"*SHOW FPS IN-GAME*"
+		"style"						"MainMenuButton"
+		"command"					"#cl_showfps 1;play /labs/ding_on"
+		"ActivationType"			"1"
+	}
+	
+	"BtnBringus"
+	{
+		"ControlName"				"BaseModHybridButton"
+		"fieldName"					"BtnBringus"
+		"xpos"						"88"		[$GAMECONSOLE && ($GAMECONSOLEWIDE && !$ANAMORPHIC)]
+		"xpos"						"63"		[$GAMECONSOLE && (!$GAMECONSOLEWIDE || $ANAMORPHIC)]	
+		"xpos"						"88"		[!$GAMECONSOLE && $WIN32WIDE]
+		"xpos"						"63"		[!$GAMECONSOLE && !$WIN32WIDE]	
+		"ypos"						"78"
+		"wide"						"280"
+		"tall"						"20"
+		"autoResize"				"1"
+		"pinCorner"					"0"
+		"visible"					"1"
+		"enabled"					"1"
+		"tabPosition"				"0"
+		"labelText"					"*BRINGUS MENU V0.2*"
+		"style"						"MainMenuButton"
+		"command"					"#echo why did you click that? what did you think was going to happen? and why are you using this on pc???"
 		"ActivationType"			"1"
 	}
 }
