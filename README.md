@@ -1,5 +1,5 @@
 # portal2bringusmenu
-Mod Menu for Portal 2 for the Nintendo Switch version 0.1
+Mod Menu for Portal 2 for the Nintendo Switch
 
 NOTE: gm_construct is no longer included due to file size. You can download it here, just put it into the '/nxcontent/update/maps/' folder: https://drive.google.com/file/d/1EY6oqJ3k8FcPcSGMHjvi2YLTKJAEZGfB/view?usp=sharing
 
