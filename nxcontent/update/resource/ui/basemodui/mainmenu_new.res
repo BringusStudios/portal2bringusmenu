@@ -355,7 +355,7 @@
 		"visible"					"1"
 		"enabled"					"1"
 		"tabPosition"				"0"
-		"labelText"					"*BRINGUS MENU V0.2*"
+		"labelText"					"*BRINGUS MENU V0.3*"
 		"style"						"MainMenuButton"
 		"command"					"#echo why did you click that? what did you think was going to happen? and why are you using this on pc???"
 		"ActivationType"			"1"
